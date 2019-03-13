@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blog.mapper.CommentMapper">
+	<cache />
+	<resultMap id="BaseResultMap" type="com.blog.model.Comment">
+
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="blog_id" jdbcType="INTEGER" property="blogId" />
+		<result column="commenter_id" jdbcType="INTEGER" property="commenterId" />
+		<result column="commenter_name" jdbcType="VARCHAR" property="commenterName" />
+		<result column="commenter_avatar" jdbcType="VARCHAR" property="commenterAvatar" />
+		<result column="content" jdbcType="VARCHAR" property="content" />
+		<result column="comment_time" jdbcType="TIMESTAMP" property="commentTime" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id, blog_id as blogId, commenter_id as commenterId, commenter_name as commenterName, commenter_avatar as commenterAvatar, content,
+		comment_time as commentTime
+	</sql>
+
+
+	<select id="selectCommentByBlogId" resultType="map"
+		parameterType="Map">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM comment
+		where blog_id = #{blogId}
+		order by commentTime
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from comment
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<insert id="insert" parameterType="com.blog.model.Comment">
+		insert into comment (blog_id,commenter_id, commenter_name, commenter_avatar, content, comment_time)
+		values (#{blogId,jdbcType=INTEGER},#{commenterId,jdbcType=INTEGER},
+		#{commenterName,jdbcType=VARCHAR},#{commenterAvatar,jdbcType=VARCHAR},
+		#{content,jdbcType=VARCHAR}, #{commentTime,jdbcType=TIMESTAMP})
+	</insert>
+</mapper>

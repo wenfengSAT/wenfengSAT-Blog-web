@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blog.mapper.CommentMapper">
+	<cache />
+	<resultMap id="BaseResultMap" type="com.blog.model.ReplyComment">
+
+		<id column="id" jdbcType="INTEGER" property="id" />
+		<result column="pid" jdbcType="INTEGER" property="pid" />
+		<result column="replier_id" jdbcType="INTEGER" property="replierId" />
+		<result column="replier_name" jdbcType="VARCHAR" property="replierName" />
+		<result column="replier_avatar" jdbcType="VARCHAR" property="replierAvatar" />
+		<result column="reply_content" jdbcType="VARCHAR" property="replyContent" />
+		<result column="to_commenter" jdbcType="VARCHAR" property="toCommenter" />
+		<result column="" jdbcType="TIMESTAMP" property="commentTime" />
+	</resultMap>
+	<sql id="Base_Column_List">
+		id, pid, replier_id as replierId, replier_name as replierName, replier_avatar as replierAvatar, 
+		reply_content as replyContent, to_commenter as toCommenter, reply_time as replyTime
+	</sql>
+
+
+	<select id="selectReplyCommentByPId" resultType="map"
+		parameterType="Map">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM comment_reply
+		where pid = #{pid}
+		order by replyTime
+	</select>
+
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from comment_reply
+		where id = #{id,jdbcType=INTEGER}
+	</delete>
+
+	<insert id="insert" parameterType="com.blog.model.ReplyComment">
+		insert into comment_reply (pid, replier_id, replier_name, replier_avatar, reply_content, to_commenter, comment_time)
+		values (#{pid,jdbcType=INTEGER},#{replierId,jdbcType=INTEGER},
+		#{replierName,jdbcType=VARCHAR},#{replierAvatar,jdbcType=VARCHAR},
+		#{replyContent,jdbcType=VARCHAR},#{toCommenter,jdbcType=VARCHAR},
+		 #{commentTime,jdbcType=TIMESTAMP})
+	</insert>
+</mapper>
