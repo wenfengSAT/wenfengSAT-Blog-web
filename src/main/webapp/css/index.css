@@ -269,6 +269,10 @@ h3.blogtitle {
     background: url(../images/newsbg03.png) no-repeat left center
 }
 
+.keywords {
+    background: url(../images/keywords.png) no-repeat left center
+}
+
 .blogpic img {
     width: 100%
 }

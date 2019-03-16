@@ -54,7 +54,7 @@ var Tags = function() {
 }
 
 var selectPrevBlog = function() {
-	var id = $(".id").val();
+	var id = $("#blogId").val();
 	var params = {
 		id : id - 1
 	};
@@ -84,7 +84,7 @@ var selectPrevBlog = function() {
 };
 
 var selectNextBlog = function() {
-	var vid = $(".id").val();
+	var vid = $("#blogId").val();
 	var id = parseInt(vid) + 1;
 	var params = {
 		id : id

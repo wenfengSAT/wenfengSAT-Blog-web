@@ -45,7 +45,7 @@
               href="javascript:void(0)" target="_blank"><img
                 src="${pageContext.request.contextPath}/images/wx_ad.png"></a></li>
             <li class="slide" style=" "><a
-              href="https://www.4562.com/" target="_blank"><img
+              href="javascript:void(0)" target="_blank"><img
                 src="${pageContext.request.contextPath}/images/5e9a97fc44fc12475b6b0e87e2ff5806.jpg"></a></li>
 
             <li class="slide" style=" "><a
@@ -54,8 +54,8 @@
                 src="${pageContext.request.contextPath}/images/2.jpg"></a></li>
 
             <li class="slide" style=""><a
-              href="https://www.4562.com/" target="_blank"><img
-                src="${pageContext.request.contextPath}/images/8db2f0313616ebe46ca5770769850b42.png"></a></li>
+              href="javascript:void(0)" target="_blank"><img
+                src="${pageContext.request.contextPath}/images/post-bg-kuaidi.jpg"></a></li>
             <div class="fader_controls">
               <div class="pic_page prev" data-target="prev"></div>
               <div class="pic_page next" data-target="next"></div>
@@ -68,14 +68,14 @@
       </div>
       <div class="headline">
         <ul>
-          <li><a href="find/20400.html"
-            title="【2019届校园招聘】如何取得互联网10+offer？"><img
+          <li><a href="https://wenfengsat.github.io/" target="_blank"
+            title="【推广大使】文峰的博客"><img
               src="${pageContext.request.contextPath}/images/3ee0644472fa8556562ab3d8716b5316.jpg"
-              alt="【2019届校园招聘】如何取得互联网10+offer？"><span>【2019届校园招聘】<br> 如何取得互联网10+offer？</span></a></li>
-          <li><a href="find/19873.html"
-            title="【匆匆校园招聘季】总结校招经历的这几个月…"><img
+              alt="【推广大使】文峰的博客"><span>【推广大使】<br> 文峰的博客 </span></a></li>
+          <li><a href="https://github.com/wenfengSAT" target="_blank"
+            title="【推广大使】wenfengSAT的 Github"><img
               src="${pageContext.request.contextPath}/images/3f0b6da48a6fd4e626a021ff7bd0d74f.jpg"
-              alt="【匆匆校园招聘季】总结校招经历的这几个月…"><span>【匆匆校园招聘季】<br>总结校招经历的这几个月</span></a></li>
+              alt="【推广大使】wenfengSAT的 Github"><span>【推广大使】<br>我的 Github,欢迎start</span></a></li>
         </ul>
       </div>
 
@@ -129,7 +129,7 @@
         <p>Email：wenfengSAT@163.com</p>
         <p></p>
         <ul class="linkmore">
-          <li><a href="/Blog/" target="_blank"
+          <li><a href="/Blog/" target="_self"
             class="iconfont icon-zhuye" title="网站地址"></a></li>
           <li><a
             href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=370875057@qq.com"
@@ -143,12 +143,6 @@
         </ul>
       </div>
 
-    <div class="whitebg notice">
-      <h2 class="htitle">热门文章</h2>
-      <ul>
-      
-     </ul>
-    </div>
 
       <div class="dj paihang animated fadeIn"
         style="animation-delay:0.3s">

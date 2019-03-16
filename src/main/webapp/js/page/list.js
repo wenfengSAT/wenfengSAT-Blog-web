@@ -126,11 +126,9 @@ var globalCount = 0;
             }
             blogList += '<li style="animation-delay:0.' + i + 's" class="animated fadeInDown"><h3 class="blogtitle"><a target="_blank" href="find/' + id + '.html"  >'
             + data[i].title
-            + '</a></h3><hr/><span><a href="javascript:void(0);" style="color:#096">【'
-            + keyword
-            + '】</a></span><span class="blogpic imgscale"><a href="find/' + id + '.html" title=""><img src="' + data[i].images + '"  /></a></span><p class="blogtext">'
+            + '</a></h3><span class="blogpic imgscale"><a href="find/' + id + '.html" title=""><img src="' + data[i].images + '"  /></a></span><p class="blogtext">'
             + data[i].introduction
-            + '</p><div class="autor"><span class="lm f_l"><a href="javascript:void(0);">' + data[i].type.typename + '</a></span><span class="lm f_l"><a href="javascript:void(0);">'
+            + '</p><div class="autor"><span class="lm f_l"><a href="javascript:void(0);">' + data[i].type.typename + '</a></span><span class="lm keywords"><a href="javascript:void(0);">'
             + keyword
             + '</a></span><span class="dtime f_l">'
             + Format(data[i].addtime, "yyyy-MM-dd")
@@ -140,21 +138,7 @@ var globalCount = 0;
             + data[i].id
             + ' href="javascript:void(0);">'
             + data[i].commentnum
-            + '</a></b>）</span><span class="f_r"><a href="find/' + id + '.html" class="more">阅读原文>></a></span></div></li>'
-         
-            
-            +'<li style="animation-delay:0.' + i + 's" class="animated fadeInDown"><h3 class="blogtitle"><a target="_blank" href="find/' + id + '.html"  >'
-            + data[i].title
-            + '</a></h3><span class="blogpic imgscale"><a href="find/' + id + '.html" title=""><img src="' + data[i].images + '"  /></a></span><p class="blogtext">'
-            + data[i].introduction
-            + '</p><p class="bloginfo"><i class = "avatar"><img src="images/head.jpg" border=0 width="30" height="30"></i><span>wfhuang</span><span><a href="javascript:void(0);">【'
-            + keyword
-            + '】</a></span><span class="m_time">'
-            + Format(data[i].addtime, "yyyy-MM-dd")
-            + '</span><span  class="clicknum">浏览('
-            + data[i].clicknum
-            + ')</span><span class="f_r"></p><a href="find/' + id + '.html" class="viewmore">阅读原文</a></span></li>'
-          
+            + '</a></b>）</span><span class="f_r"><a href="find/' + id + '.html" class="more">阅读原文>></a></span></div></li>';
           }
           var p = {
             client_id : 'cytzg9rLH',

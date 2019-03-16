@@ -269,29 +269,6 @@ var initBlogByNew = function(page) {
             + data[i].clicknum
             + ')</span><span class="f_r"></p><a href="find/' + id + '.html" class="viewmore">阅读原文</a></span></li>'
         }
-        var p = {
-          client_id : 'cytzg9rLH',
-          topic_source_id : parm
-        };
-        $
-          .ajax({
-            url : 'http://changyan.sohu.com/api/2/topic/count',
-            type : 'get',
-            data : p,
-            dataType : 'jsonp',
-            success : function(pl) {
-              for (var i = 0; i < arr.length; i++) {
-                $('.' + arr[i])
-                  .html(
-                    pl.result[arr[i]].comments);
-              }
-            },
-            error : function() {
-              layer.msg('出错啦', {
-                icon : 2
-              });
-            }
-          });
         // 初始化数据
         if (page.pageNum >= 2) {
           $(".newblogs").find("ul").append(newBlog);
@@ -361,6 +338,7 @@ var initBlogByClick = function() {
       }
     });
 };
+
 
 var initAllLinks = function() {
 

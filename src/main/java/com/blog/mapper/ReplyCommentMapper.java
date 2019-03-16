@@ -3,7 +3,7 @@ package com.blog.mapper;
 import java.util.List;
 import java.util.Map;
 
-import com.blog.model.Comment;
+import com.blog.model.ReplyComment;
 
 public interface ReplyCommentMapper {
 
@@ -11,5 +11,5 @@ public interface ReplyCommentMapper {
 	
 	int deleteByPrimaryKey(int id);
 	
-	int insert(Comment comment);
+	int insert(ReplyComment comment);
 }

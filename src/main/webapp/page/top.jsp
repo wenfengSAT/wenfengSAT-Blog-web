@@ -41,10 +41,10 @@ a {
             <li></li>
           </ul> <span></span></li>
         <li><a href="${pageContext.request.contextPath}/resource">资源分享</a></li>
-        <%-- <li><a href="${pageContext.request.contextPath}/find/13015.html">网站介绍</a></li> --%>
+        <%-- <li><a href="${pageContext.request.contextPath}/">网站介绍</a></li> --%>
         <li><a href="${pageContext.request.contextPath}/about">关于我</a></li>
-        <li><a href="${pageContext.request.contextPath}/message">留言</a></li>
-        <li><a href="${pageContext.request.contextPath}/admin/">登录</a></li>
+        <%-- <li><a href="${pageContext.request.contextPath}/message">留言</a></li> --%>
+        <li><a href="javascript:void(0)">登录</a></li>
       </ul>
     </nav>
      <div class="searchico"></div>

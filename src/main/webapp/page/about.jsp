@@ -37,8 +37,8 @@
 						<br>
 						<h3 style="color: #000;font-size: 15px;">关于我的博客</h3>
 						<br>
-						<p><a href="https://wenfengsat.github.io/about/">https://wenfengsat.github.io/about/</a></p>
-						<a target= "_blank" href="/Blog/find/13015.html"><span style="color: #12aae8;font-size: 13px;">查看更多</span></a>
+						<p><a href="javascript:void(0)">https://wenfengsat.github.io/about/</a></p>
+						<a target= "_blank" href="https://wenfengsat.github.io/about/"><span style="color: #12aae8;font-size: 13px;">查看更多</span></a>
 					<br>
           <br>
           </div>
@@ -49,13 +49,12 @@
 			<div class="aboutme m20 whitebg">
 				<h2 class="htitle">关于我</h2>
 				<div class="avatar1 animated fadeIn">
-					<img src="${pageContext.request.contextPath}/images/my.jpeg">
+					<img src="${pageContext.request.contextPath}/images/my.jpg">
 				</div>
 				<div class="ab_con animated fadeIn">
-					<p>网名：我倾尽一生,囚你无期 | Luotf</p>
-					<p>职业：Java开发工程师 | 全栈</p>
-					<p>籍贯：四川省—成都市</p>
-					<p>邮箱：849673404@qq.com</p>
+					<p>常驻：广东-惠州</p>
+					<p>QQ：1043977215</p>
+					<p>邮箱：wenfengSAT@163.com</p>
 				</div>
 			</div>
 			<div class="weixin animated fadeIn whitebg">
