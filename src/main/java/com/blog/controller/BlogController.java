@@ -22,12 +22,27 @@ import com.blog.util.ConstantUtil;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+/**
+ * 
+ * @Description： 功能描述
+ * 
+ * @author [ Wenfeng.Huang@desay-svautomotive.com ] on [2019年3月16日下午5:29:06]
+ * @Modified By： [修改人] on [修改日期] for [修改说明]
+ *
+ */
 @Controller
 public class BlogController {
 
 	@Resource(name = "blogServiceImpl")
 	private BlogService blogService;
 
+	/**
+	 * 查看博客详情
+	 * @param id
+	 * @param model
+	 * @return
+	 * @throws Exception
+	 */
 	@RequestMapping(value = "/find/{id}.html")
 	@SystemLog(description = ConstantUtil.BLOG_SELECT, userType = ConstantUtil.USERTYPE_USER)
 	public String selectBlogById(@PathVariable Integer id, Model model) throws Exception {

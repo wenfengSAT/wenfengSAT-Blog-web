@@ -5,7 +5,6 @@ import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Blog implements Serializable{
     
 	private static final long serialVersionUID = 1L;

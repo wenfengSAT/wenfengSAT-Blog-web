@@ -19,6 +19,13 @@ import com.blog.model.Log;
 import com.blog.service.LogService;
 import com.blog.util.UserIpUtil;
 
+/**
+ * 
+ * @Description： 切面日志
+ * @author [ Wenfeng.Huang@desay-svautomotive.com ] on [2019年3月16日下午5:28:34]
+ * @Modified By： [修改人] on [修改日期] for [修改说明]
+ *
+ */
 @Aspect
 @Component
 public class SystemLogAspect {

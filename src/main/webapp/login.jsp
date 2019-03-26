@@ -37,7 +37,7 @@
 			<div class="col-sm-7">
 				<div class="signin-info">
 					<div class="logopanel m-b">
-						<h1>[ luotf.com ]</h1>
+						<h1>[ WF Blog ]</h1>
 					</div>
 					<div class="m-b"></div>
 					<h4>
@@ -50,13 +50,14 @@
 							访客记录、IP剔除</li>
 						<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>
 							分页数据、动态图表</li>
-						<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 所有操作都异步</li>
+						<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i> 
+							所有操作都异步</li>
 						<li><i class="fa fa-arrow-circle-o-right m-r-xs"></i>
 							注：访问者无删除、修改操作</li>
 					</ul>
 					<div class=" tooltip-demo ">
 						<strong>还没有账号？ <a href="#" style="color:#3c3a39"
-							data-toggle="tooltip" data-placement="top" title="QQ:849673404">联系站长&raquo;</a>
+							data-toggle="tooltip" data-placement="top" title="QQ:1043977215">联系站长&raquo;</a>
 							<a href="${pageContext.request.contextPath}/index.jsp"
 							style="color:#3c3a39;margin-left:15px;">首页&raquo;</a></strong>
 
@@ -66,7 +67,7 @@
 			<div class="col-sm-5">
 				<form id="login" action="${pageContext.request.contextPath}/checkLogin" method="post">
 					<h3 class="no-margins">登录</h3>
-					<p class="m-t-md">登录访问 luotf 后台管理网站</p>
+					<p class="m-t-md">登录访问 WF Blog后台管理网站</p>
 					<input type="text" id="username" name="username" class="form-control uname"
 						placeholder="用户名" /> <input type="password" name="password" id="password"
 						class="form-control pword m-b" placeholder="密码" /> <a
@@ -79,7 +80,7 @@
 		</div>
 		<div class="signup-footer">
 			<div class="pull-left">
-				<strong>&copy; 2018 luotf blog</strong>
+				<strong>&copy; 2018 WF Blog</strong>
 			</div>
 		</div>
 	</div>

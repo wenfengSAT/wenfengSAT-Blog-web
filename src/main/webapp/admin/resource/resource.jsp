@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-<title>资源数据</title>
+<title>资源管理</title>
 <meta name="keywords" content="">
 <meta name="description"
 	content="">

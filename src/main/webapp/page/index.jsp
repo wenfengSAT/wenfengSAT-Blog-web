@@ -4,7 +4,6 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="baidu-site-verification" content="Eg9tVrHSEK" />
 <title>首页_文峰的博客 - WF Blog</title>
 <link rel="shortcut icon"
   href="${pageContext.request.contextPath}/images/favicon.ico">
