@@ -44,6 +44,7 @@
 			
 		</div>
 	</article>
+	<%@ include file="footer.jsp"%>
 	<script src="${pageContext.request.contextPath}/js/page/message.js"></script>
 	<script src="${pageContext.request.contextPath}/js/layer/layer.js"></script>
 </body>

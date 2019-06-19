@@ -107,6 +107,7 @@
     </div>
     <a href="#" class="top cd-top animated ">Top</a>
   </article>
+  <%@ include file="footer.jsp"%>
   <script src="${pageContext.request.contextPath}/js/page/list.js"></script>
   <script src="${pageContext.request.contextPath}/js/layer/layer.js"></script>
   <script id="cy_cmt_num"

@@ -198,6 +198,7 @@
   <script src="${pageContext.request.contextPath}/js/layer/layer.js"></script>
   <script
     src="${pageContext.request.contextPath}/js/plugins/sweetalert/sweetalert.min.js"></script>
+  <%@ include file="footer.jsp"%>
 </body>
 
 </html>

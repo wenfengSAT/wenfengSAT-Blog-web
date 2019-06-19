@@ -211,7 +211,7 @@
     <a href="#" class="top cd-top animated ">Top</a>
   </article>
 
-  <%@ include file="fonter.jsp"%>
+  <%@ include file="footer.jsp"%>
   <script src="${pageContext.request.contextPath}/js/page/info.js"></script>
   <script src="${pageContext.request.contextPath}/js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();

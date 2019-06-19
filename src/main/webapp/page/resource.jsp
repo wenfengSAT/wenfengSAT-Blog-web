@@ -78,6 +78,6 @@
   <%--   <script src="${pageContext.request.contextPath}/js/jquery.min.js?v=2.1.4"></script> --%>
 	<script src="${pageContext.request.contextPath}/js/page/resource.js"></script>
 	<script src="${pageContext.request.contextPath}/js/layer/layer.js"></script>
-   
+   <%@ include file="footer.jsp"%>
 </body>
 </html>
